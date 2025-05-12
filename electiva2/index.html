@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Explicación Básica: Git, GitHub, HTML y CSS</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #fff;
+    color: #000;
+    line-height: 1.5;
+  }
+  main {
+    max-width: 800px;
+    margin: auto;
+  }
+  h1, h2, h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  ul, ol {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  code {
+    background-color: #eee;
+    padding: 0.15em 0.3em;
+    border-radius: 3px;
+    font-family: monospace;
+  }
+  pre {
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+    font-family: monospace;
+  }
+  a {
+    color: #0000ee;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>📚 Explicación Básica: Git, GitHub, HTML y CSS</h1>
+
+  <section>
+    <h2>🐙 ¿Qué es Git?</h2>
+    <p><strong>Git</strong> es un sistema de control de versiones que permite guardar el historial de cambios en tus archivos, ideal para trabajar en equipo o guardar diferentes versiones de tu trabajo.</p>
+    <h3>Conceptos clave</h3>
+    <ul>
+      <li><strong>Repositorio:</strong> carpeta que contiene tu proyecto con el seguimiento de versiones.</li>
+      <li><strong>Commit:</strong> guardar cambios con un mensaje que explique qué hiciste.</li>
+      <li><strong>Branch:</strong> rama para trabajar sin afectar la versión principal.</li>
+      <li><strong>Merge:</strong> unir cambios de diferentes ramas.</li>
+      <li><strong>Clone:</strong> copiar un repositorio remoto a tu computadora.</li>
+      <li><strong>Push:</strong> subir tus cambios al repositorio online.</li>
+      <li><strong>Pull:</strong> traer cambios nuevos del repositorio remoto.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🌐 ¿Qué es GitHub?</h2>
+    <p><strong>GitHub</strong> es un sitio web para alojar repositorios Git y colaborar con otras personas.</p>
+    <ul>
+      <li>Guardas tus proyectos en la nube.</li>
+      <li>Colaboras con otros mediante "pull requests".</li>
+      <li>Gestionas problemas y tareas con "issues".</li>
+      <li>Muestras tus proyectos como portafolio.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>⚙️ Uso básico de Git y GitHub</h2>
+    <ol>
+      <li>Crear un repositorio en <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>.</li>
+      <li>Clonar el repositorio:<br/>
+      <pre><code>git clone https://github.com/usuario/repositorio.git</code></pre></li>
+      <li>Hacer cambios en los archivos.</li>
+      <li>Agregar cambios:<br/>
+      <pre><code>git add .</code></pre></li>
+      <li>Guardar cambios:<br/>
+      <pre><code>git commit -m "Mensaje"</code></pre></li>
+      <li>Subir al repositorio remoto:<br/>
+      <pre><code>git push origin main</code></pre></li>
+      <li>Actualizar localmente:<br/>
+      <pre><code>git pull origin main</code></pre></li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>📄 Etiquetas básicas en HTML</h2>
+    <p>HTML es el lenguaje para estructurar páginas web usando etiquetas.</p>
+    <ul>
+      <li><code>&lt;!DOCTYPE html&gt;</code>: declara el tipo de documento.</li>
+      <li><code>&lt;html&gt; ... &lt;/html&gt;</code>: contenedor principal.</li>
+      <li><code>&lt;head&gt; ... &lt;/head&gt;</code>: metadatos, estilos, scripts.</li>
+      <li><code>&lt;body&gt; ... &lt;/body&gt;</code>: contenido visible.</li>
+      <li><code>&lt;h1&gt; ... &lt;h6&gt;</code>: títulos.</li>
+      <li><code>&lt;p&gt; ... &lt;/p&gt;</code>: párrafos.</li>
+      <li><code>&lt;a href="url"&gt; ... &lt;/a&gt;</code>: enlaces.</li>
+      <li><code>&lt;ul&gt; / &lt;ol&gt;</code> y <code>&lt;li&gt;</code>: listas.</li>
+      <li><code>&lt;img src="ruta" alt="texto"&gt;</code>: imágenes.</li>
+    </ul>
+    <h3>Ejemplo básico</h3>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Mi página&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo.&lt;/p&gt;
+    &lt;a href="https://www.ejemplo.com"&gt;Un enlace&lt;/a&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+  </section>
+
+  <section>
+    <h2>🎨 Introducción a CSS</h2>
+    <p>CSS define el estilo de los elementos HTML, como colores, fuentes y tamaños.</p>
+    <h3>Formas de usar CSS</h3>
+    <ul>
+      <li><strong>Inline:</strong> dentro de una etiqueta con atributo <code>style</code>.</li>
+      <li><strong>Interno:</strong> dentro de <code>&lt;style&gt;</code> en el <code>&lt;head&gt;</code>.</li>
+      <li><strong>Externo:</strong> archivo separado conectado con <code>&lt;link&gt;</code>.</li>
+    </ul>
+    <h3>Ejemplo de CSS interno</h3>
+    <pre><code>&lt;style&gt;
+body {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+}
+h1 {
+  color: darkblue;
+}
+&lt;/style&gt;
+</code></pre>
+    <h3>Ejemplo CSS inline</h3>
+    <pre><code>&lt;p style="color: red; font-weight: bold;"&gt;Texto rojo negrita&lt;/p&gt;</code></pre>
+  </section>
+
+  <footer>
+    <p>Pequeña continuacion a la clase previamente vista.</p>
+  </footer>
+</main>
+</body>
+</html>
